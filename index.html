@@ -12,27 +12,29 @@
   <body>
     <div class="container">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input type="search" class="form-input" placeholder="Enter a city..." required />
+          <input type="submit" class="form-submit-btn" value="Search" />
         </form>
       </header>
       <main>
-        <h1>Toronto</h1>
-        <p>
+				<div class="weather-main-info">
 					<div>
-						Friday 12:49, scattered clouds
-						<br />
-						Humidity: <span class="humid-value">77%</span>, Wind:
-						<span class="wind-speed-value">13 km/h</span>
+						<h1>Toronto</h1>
+						<p>
+							Friday 12:49, scattered clouds
+							<br />
+							Humidity: <span class="humid-value">77%</span>, Wind:
+							<span class="wind-speed-value">13 km/h</span>
+						</p>
 					</div>
 					
           <div>☀️ 22 °C</div>
-        </p>
+				</div>
       </main>
 			<footer>
 				<p>
-					The project was coded by
+					This project was coded by
 					<a href="https://github.com/KatrinaIT" target="_blank">Kate</a>, is
 					<a
 						href="https://github.com/KatrinaIT/weather_forecast_app"
