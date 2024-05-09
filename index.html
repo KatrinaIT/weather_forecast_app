@@ -12,15 +12,15 @@
   <body>
     <div class="container">
       <header>
-        <form class="search-form">
-          <input type="search" class="form-input" placeholder="Enter a city..." required />
+        <form class="search-form" id="header-form">
+          <input type="search" class="form-input" id="form-input" placeholder="Enter a city..." required />
           <input type="submit" class="form-submit-btn" value="Search" />
         </form>
       </header>
       <main>
 				<div class="weather-main-info">
 					<div>
-						<h1 class="weather-city">Toronto</h1>
+						<h1 class="weather-city" id="main-city">Toronto</h1>
 						<p class="weather-details">
 							Friday 12:49, scattered clouds
 							<br />
@@ -53,7 +53,6 @@
 			</footer>
     </div>
 
-    
     <script src="src/script.js"></script>
   </body>
 </html>
