@@ -1,25 +1,30 @@
 function updateWeather(response) {
-	let temperatureMain = document.querySelector("#main-temperature");
-	temperatureMain.innerHTML = Math.round(response.data.temperature.current);
+  let temperatureMain = document.querySelector("#main-temperature");
+  temperatureMain.innerHTML = Math.round(response.data.temperature.current);
 
-	let cityElement = document.querySelector("#city");
+  let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.city;
 
-	let conditionElement = document.querySelector("#conditions");
-	conditionElement.innerHTML = response.data.condition.description;
-	
-	let humidValue = document.querySelector("#humid-value");
-	humidValue.innerHTML = `${response.data.temperature.humidity}%`;
+  let conditionElement = document.querySelector("#conditions");
+  conditionElement.innerHTML = response.data.condition.description;
 
-	let windSpeed = document.querySelector("#wind-speed-value");
-	windSpeed.innerHTML = `${response.data.wind.speed} km/h`;
+  let humidValue = document.querySelector("#humid-value");
+  humidValue.innerHTML = `${response.data.temperature.humidity}%`;
 
-	let timeElement = document.querySelector("#current-time");
-	let date = new Date(response.data.time * 1000);
-	timeElement.innerHTML = formatDate(date);
+  let windSpeed = document.querySelector("#wind-speed-value");
+  windSpeed.innerHTML = `${response.data.wind.speed} km/h`;
 
-	// let iconElement = querySelector("#weather-ivon");
-	// iconElement.innerHTML = response.data.condition.icon;
+  let timeElement = document.querySelector("#current-time");
+  let date = new Date(response.data.time * 1000);
+  timeElement.innerHTML = formatDate(date);
+
+  let iconElement = document.querySelector("#icon");
+	iconElement.innerHTML = `<img
+                class="weather-icon"
+                id="weather-icon"
+                src="${response.data.condition.icon_url}"
+                alt="weather-icon"
+              />`;
 }
 
 function formatDate(date) {
