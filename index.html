@@ -4,53 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Forecast</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <header>
         <form class="search-form" id="header-form">
-          <input type="search" class="form-input" id="form-input" placeholder="Enter a city..." required />
+          <input
+            type="search"
+            class="form-input"
+            id="form-input"
+            placeholder="Enter a city..."
+            required
+          />
           <input type="submit" class="form-submit-btn" value="Search" />
         </form>
       </header>
       <main>
-				<div class="weather-main-info">
-					<div>
-						<h1 class="weather-city" id="main-city">Toronto</h1>
-						<p class="weather-details">
-							Friday 12:49, scattered clouds
-							<br />
-							Humidity: <span class="humid-value">77%</span>, Wind:
-							<span class="wind-speed-value">13 km/h</span>
-						</p>
-					</div>
-					
+        <div class="weather-main-info">
+          <div>
+            <h1 class="weather-city" id="city"></h1>
+            <p class="weather-details">
+              <span id="current-time"></span>, <span id="conditions"></span>
+              <br />
+              Humidity: <span class="humid-value" id="humid-value"></span>, Wind:
+              <span class="wind-speed-value" id="wind-speed-value"></span>
+            </p>
+          </div>
+
           <div class="weather-temperature">
-						<div class="weather-icon">☀️ </div>
-						<div class="weather-value">22 </div>
-						<div class="weather-unit">°C</div>
-					</div>
-				</div>
+            <div class="weather-icon" id="weather-icon">🌤️</div>
+            <div class="weather-value" id="main-temperature"></div>
+            <div class="weather-unit">°C</div>
+          </div>
+        </div>
       </main>
-			<footer>
-				<p>
-					This project was coded by
-					<a href="https://github.com/KatrinaIT" target="_blank">Kate</a>, is
-					<a
-						href="https://github.com/KatrinaIT/weather_forecast_app"
-						target="_blank"
-						>open-sourced on GitHub</a
-					>
-					and
-					<a href="https://weather-modern-app.netlify.app/" target="_blank"
-						>hosted on Netlify</a
-					>
-				</p>
-			</footer>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/KatrinaIT" target="_blank">Kate</a>, is
+          <a
+            href="https://github.com/KatrinaIT/weather_forecast_app"
+            target="_blank"
+            >open-sourced on GitHub</a
+          >
+          and
+          <a href="https://weather-modern-app.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
+        </p>
+      </footer>
     </div>
 
     <script src="src/script.js"></script>
