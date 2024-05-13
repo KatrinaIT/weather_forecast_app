@@ -1,6 +1,13 @@
+* {
+  font-family: "Reddit Sans", sans-serif;
+}
+
 body {
-  background: #f9f7fe;
-  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(
+    85deg,
+    rgba(255, 170, 128, 0.3) 36.2%,
+    rgba(255, 85, 128, 0.3) 58.5%
+  );
 }
 
 a {
@@ -22,6 +29,8 @@ header {
 
 .form-input {
   background-color: #f9f7fe;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.45),
+    inset 2px 2px 4px rgba(94, 104, 121, 0.3);
   border: none;
   padding: 15px 20px;
   width: 75%;
@@ -31,13 +40,16 @@ header {
 }
 
 .form-submit-btn {
-  background-color: aqua;
+  background-color: #ff5580;
+  color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 15px 30px;
   border: none;
   border-radius: 10px;
   font-size: 16px;
   margin-left: 6px;
 }
+
 main {
   padding: 30px 0;
 }
@@ -48,49 +60,49 @@ main {
 }
 
 .weather-city {
-	margin: 0;
-	font-size: 36px;
-	line-height: 46px;
+  margin: 0;
+  font-size: 36px;
+  line-height: 46px;
 }
 
 .weather-details {
-	font-size: 16px;
-	line-height: 26px;
-	color: rgba(39, 33, 66, .6);
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(39, 33, 66, 0.6);
 }
 
 .humid-value,
 .wind-speed-value {
-	font-weight: bold;
-	color: #f65282;
+  font-weight: bold;
+  color: #ff0080;
 }
 
 .weather-temperature {
-	display: flex;
+  display: flex;
 }
 
 .weather-icon {
-	width: 80px;
-	height: 80px;
-	margin-top: 6px;
+  width: 80px;
+  height: 80px;
+  margin-top: 6px;
 }
 
 .weather-value {
-	font-size: 80px;
-	font-weight: 600;
-	line-height: 80px;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 80px;
 }
 
 .weather-unit {
-	font-size: 30px;
-	font-weight: 500;
-	margin: 10px 0 0 10px;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 10px 0 0 10px;
 }
 
 footer {
   border-top: 1px solid #f9f7fe;
   padding-top: 10px;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
 }
