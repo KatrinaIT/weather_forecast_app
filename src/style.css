@@ -99,6 +99,31 @@ main {
   margin: 10px 0 0 10px;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+}
+
+.forecast-item:hover {
+	background-color: #f9f7fe;
+	padding: 8px 10px;
+	border-radius: 8px;
+}
+
+.weather-forecast-day {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.weather-forecast-temp {
+  font-size: 13px;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.5;
+}
+
 footer {
   border-top: 1px solid #f9f7fe;
   padding-top: 10px;
