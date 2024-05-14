@@ -118,11 +118,30 @@ main {
 }
 
 .weather-forecast-temp {
-  font-size: 13px;
+  font-size: 14px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: 10px;
 }
 
+.weather-forecast-icon {
+	width: 70px;
+	height: 70px;
+  text-align: center;
+}
+
+.weather-forecast-temp-max,
 .weather-forecast-temp-min {
-  opacity: 0.5;
+	color: #ff0080;
+}
+
+.weather-forecast-temp-max {
+	font-weight: bold;
+}
+.weather-forecast-temp-min {
+  opacity: 0.6;
+	padding: 0 10px;
 }
 
 footer {
